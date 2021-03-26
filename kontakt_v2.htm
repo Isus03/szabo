@@ -27,7 +27,7 @@ input[type=text], select, textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
-  border-color: rgb(121, 60, 20);
+  border-color: rgb(209, 113, 49);
 }
 
 label {
@@ -52,7 +52,8 @@ input[type=submit]:hover {
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 100px;
+  padding-bottom: 150px;
 }
 
 .col-25 {
@@ -68,7 +69,8 @@ input[type=submit]:hover {
 }
 
 
-.country {
+#col25 {
+  margin-top: 70px;
     
 
 
@@ -99,6 +101,22 @@ input[type=submit]:hover {
     </style>
 </head>
 <body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     <div class="container">
         <form action="config.php">
@@ -158,6 +176,7 @@ input[type=submit]:hover {
             </div>
             <div class="col-75">
                 <select onchange="$('input[name=categoryId]').val(this.value);checkDuplicates();loadTaskData(this.value);">
+                    <option value="-1">Izaberi vrstu posla...</option>
                     <option value="211">Odmah</option>
                     <option value="210">do 1 mjeseca</option>
                     <option value="209">do 1-3 mjeseca</option>
@@ -179,10 +198,67 @@ input[type=submit]:hover {
 
 
             
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         <div class="row">
+         </div>
+          <div class="col-25" id="col25">
+            <b>
+           <label for="ime">Ime</label>
+           </b>
+          </div>
+          <div class="col-75">
+            <input type="text" id="container7" name="I" style="text-align: center; margin-top: 70px;"> 
+          </div>
+      
+
+
+        <div class="row">
+        </div>
+         <div class="col-25">
+           <b>
+          <label for="Prezime">Prezime</label>
+          </b>
+         </div>
+         <div class="col-75">
+           <input type="text" id="container8" name="P"> 
+         </div>
+       </form>
+
+
+
+
+       <div class="row">
+         </div>
+          <div class="col-25">
+            <b>
+           <label for="Email">Email</label>
+           </b>
+          </div>
+          <div class="col-75">
+            <input type="text" id="container9" name="E"> 
+          </div>
+        
+
+
           <div class="row">
             <input type="submit" value="Submit" style="text-align: center; margin-top:20px;">
           </div>
-        </form>
+
+
+
+
+
+
       </div>
 </body>
 </html>
