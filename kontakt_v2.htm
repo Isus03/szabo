@@ -69,16 +69,15 @@ input[type=submit]:hover {
 }
 
 
-#col25 {
-  margin-top: 70px;
-    
-
-
-
-
+#row1 {
+  margin-top: 100px;
 }
 
-
+@media screen and (max-width: 600px) {
+  #row1 {
+    margin-top: 150px;
+  }
+}
 
 
 
@@ -165,7 +164,7 @@ input[type=submit]:hover {
               </b>
             </div>
             <div class="col-75">
-            <input type="text" id="container5" name="Kvadratura" >
+            <input type="text" id="container5" name="Kvadratura" placeholder="kvadratura u m2" >
             </div>
           </div>
           <div class="row">
@@ -197,19 +196,10 @@ input[type=submit]:hover {
           
 
 
-            
+          
          
          
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         <div class="row">
+         <div class="row" id="row1">
          </div>
           <div class="col-25" id="col25">
             <b>
@@ -217,7 +207,7 @@ input[type=submit]:hover {
            </b>
           </div>
           <div class="col-75">
-            <input type="text" id="container7" name="I" style="text-align: left; margin-top: 70px;"> 
+            <input type="text" id="container7" name="I" style="text-align: left; " placeholder="Unesite Ime"> 
           </div>
       
 
@@ -230,7 +220,7 @@ input[type=submit]:hover {
           </b>
          </div>
          <div class="col-75">
-           <input type="text" id="container8" name="P"> 
+           <input type="text" id="container8" name="P" placeholder="Unesite prezime"> 
          </div>
        </form>
 
@@ -245,13 +235,13 @@ input[type=submit]:hover {
            </b>
           </div>
           <div class="col-75">
-            <input type="text" id="container9" name="E"> 
+            <input type="text" id="container9" name="E" placeholder="Vaš email"> 
           </div>
         
 
 
           <div class="row">
-            <input type="submit" value="Submit" style="text-align: center; margin-top:20px;">
+            <input type="submit" value="Submit" style="text-align: center; margin-top:20px;" >
           </div>
 
 
