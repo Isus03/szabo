@@ -30,10 +30,51 @@ section {
   padding: 150px 0;
 }
 
+#text1  {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#text2 {
+  font-size: 25px;
+}
+
 
 #top {
-  background-color: rgb(121, 60, 20);
+  background-image:url(slika.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 20vw;
+  color: black;
+  font-weight: bold;
 }
+
+
+#container123 {
+  background-color: rgba(255, 255, 255, 0.466);
+  border-radius: 30px;
+  padding: 50px, 50px;
+  font-size: 50px;
+  font-family: sans-serif;
+}
+
+
+@media screen and (max-width: 800px) {
+  #container123 {
+    font-size: 30px;
+  }
+
+  #text1 {
+    font-size: 15px;
+  }
+
+  #text2 {
+    font-size: 15px;
+  }
+}
+
 
 
 .threadframe {
@@ -152,11 +193,13 @@ exports.default = build;
     </div>
   </nav>
 
-  <header class="text-white" id="top">
-    <div class="container text-center" >
-      <h1>SZABO D.O.O., ZAGREB</h1>
-      <p class="lead">hidroizolacije, adaptacije stanova, adaptacije kuća, adaptacije potkrovlja</p>
-      <p style="font-size: 15px;">i na drugim mjestima u Hrvatskoj</p>
+  <header id="top">
+    <div class="container text-center" id="container123" >
+      
+      SZABO D.O.O., ZAGREB
+      <p class="lead" id="text1">hidroizolacije, adaptacije stanova, adaptacije kuća, adaptacije potkrovlja</p>
+      <p  id="text2">i na drugim mjestima u Hrvatskoj</p>
+      
     </div>
   </header>
 
