@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KONTAKT</title>
+    <ul>
+        <b>
+        <li><a href="default.asp">Szabo.d.o.o</a></li>
+        </b>
+      </ul>
+    
+    
+
+
+
+
+
+
+      
     <b>  
     <div class="row" id="title">          
         Zahtjev za ponudu
@@ -16,7 +30,7 @@
 }
 
 body {
-  background-image: url(slika.jpg);
+  background-image: url(slika123.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -24,7 +38,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   body {
-    background-image: url(slika.jpg);
+    background-image: url(slika123.jpg);
   }
 }
 
@@ -34,6 +48,42 @@ body {
     font-size: 15px;
   }
 }
+
+
+          .navbar {
+              text-decoration: none;
+              
+          }
+
+            ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color:transparent;
+         border-radius: 20px;
+         float: right;
+        
+
+  
+              
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+
+
 
 
 
@@ -131,12 +181,30 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 }
-    </style>
+   
+   
+ 
+
+
+   
+   
+   
+   
+   
+   
+   
+   </style>
 </head>
 <body>
 
 
+<script>
 
+
+
+
+    
+</script>
 
 
 
@@ -277,6 +345,43 @@ input[type=submit]:hover {
           <div class="row">
             <input type="submit" value="Submit" style="text-align: center; margin-top:20px;" >
           </div>
+
+
+
+          
+
+
+          <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
