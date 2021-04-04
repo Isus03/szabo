@@ -64,10 +64,40 @@ if(isset($_POST['email']) && $_POST['email'] != '') {
   <title>Contact Us Using PHPMailer & Gmail SMTP</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css' />
 <style>
-#title {
-background-color: gray;
+
+body {
+	background-image:url(slika123.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+	
 }
+	
+#container2 {
+	background-color: rgba(255 , 255 , 255 , 0.8 );
+	
+	
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 </style>
+
 </head>
 
 <body>
