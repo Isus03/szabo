@@ -45,7 +45,7 @@ if(isset($_POST['email']) && $_POST['email'] != '') {
 
       $mail->send();
       $output = '<div class="alert alert-success">
-                  <h5>Thankyou! for contacting us, We\'ll get back to you soon!</h5>
+                  <h5>Hvala vam, javitmo se u najkraćem mogućem roku</h5>
                 </div>';
     } catch (Exception $e) {
       $output = '<div class="alert alert-danger">
