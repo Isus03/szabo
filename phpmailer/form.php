@@ -106,7 +106,7 @@ body {
       <div class="col-lg-6 mt-3">
         <div id="container2" >
           <div class="card-header bg-dark text-light">
-            <h3 class="card-title">Contact Us</h3>
+            <h3 class="card-title">Kontaktirajte nas</h3>
           </div>
           <div class="card-body px-4">
             <form action="#" method="POST">
