@@ -114,8 +114,8 @@ body {
                <?= $output; ?>
               </div>
               <div class="form-group">
-                <label for="name"><b>Name</b></label>
-                <input type="text" name="ime" id="name" class="form-control" placeholder="Unesite ime" required>
+                <label for="name"><b>Ime i Prezime</b></label>
+                <input type="text" name="ime" id="name" class="form-control" placeholder="Unesite ime i prezime" required>
               </div>
               <div class="form-group">
                 <label for="email"><b>E-Mail</b></label>
