@@ -30,7 +30,7 @@ if(isset($_POST['email']) && $_POST['email'] != '') {
       // Gmail ID which you want to use as SMTP server
       $mail->Username = 'server.szabo1@gmail.com';
       // Gmail Password
-      $mail->Password = 'Szabo123';
+      $mail->Password = 'Szabo123.';
       $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
       $mail->Port = 587;
 
