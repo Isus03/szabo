@@ -28,14 +28,14 @@ if(isset($_POST['email']) && $_POST['email'] != '') {
       $mail->Host = 'smtp.gmail.com';
       $mail->SMTPAuth = true;
       // Gmail ID which you want to use as SMTP server
-      $mail->Username = 'tor38502003@gmail.com';
+      $mail->Username = 'server.szabo1@gmail.com';
       // Gmail Password
       $mail->Password = 'Luka2003.';
       $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
       $mail->Port = 587;
 
       // Email ID from which you want to send the email
-      $mail->setFrom('tor38502003@gmail.com');
+      $mail->setFrom('server.szabo1@gmail.com');
       // Recipient Email ID where you want to receive emails
       $mail->addAddress('477khii@gmail.com');
 
