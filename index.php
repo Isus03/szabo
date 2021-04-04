@@ -1,0 +1,149 @@
+<?php
+  use PHPMailer\PHPMailer\PHPMailer;
+  use PHPMailer\PHPMailer\Exception;
+
+  require 'vendor/phpmailer/phpmailer/src/Exception.php';
+  require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+  require 'vendor/phpmailer/phpmailer/src/SMTP.php';
+
+  // Include autoload.php file
+  require 'vendor/autoload.php';
+  // Create object of PHPMailer class
+  $mail = new PHPMailer(true);
+
+  $output = '';
+if(isset($_POST['email']) && $_POST['email'] != '') {
+  if (isset($_POST['submit'])) {
+    $ime = $_POST['ime'];
+    $email = $_POST['email'];
+    $podaci1 = $_POST['podaci1'];
+    $podaci2 = $_POST['podaci2'];
+    $kvadratura = $_POST['kvadratura'];
+    $vrijeme = $_POST['vrijeme'];
+    $lokacija = $_POST['lokacija'];
+}
+
+    try {
+      $mail->isSMTP();
+      $mail->Host = 'smtp.gmail.com';
+      $mail->SMTPAuth = true;
+      // Gmail ID which you want to use as SMTP server
+      $mail->Username = 'tor38502003@gmail.com';
+      // Gmail Password
+      $mail->Password = 'Luka2003.';
+      $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+      $mail->Port = 587;
+
+      // Email ID from which you want to send the email
+      $mail->setFrom('tor38502003@gmail.com');
+      // Recipient Email ID where you want to receive emails
+      $mail->addAddress('477khii@gmail.com');
+
+      $mail->isHTML(true);
+      $mail->Subject = 'Zahtjev za ponudu';
+      $mail->Body = "<h3>Ime : $ime <br>Email : $email <br>Vrsta posla : $podaci1<br>Opis posla : $podaci2<br>Kvadratura : $kvadratura<br>Vrijeme : $vrijeme<br>Lokacija : $lokacija</h3>";
+
+      $mail->send();
+      $output = '<div class="alert alert-success">
+                  <h5>Thankyou! for contacting us, We\'ll get back to you soon!</h5>
+                </div>';
+    } catch (Exception $e) {
+      $output = '<div class="alert alert-danger">
+                  <h5>' . $e->getMessage() . '</h5>
+                </div>';
+    }
+  }
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us Using PHPMailer & Gmail SMTP</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css' />
+<style>
+#title {
+background-color: gray;
+}
+</style>
+</head>
+
+<body class="bg-info">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 mt-3">
+        <div class="card border-danger shadow">
+          <div class="card-header bg-danger text-light">
+            <h3 class="card-title">Contact Us</h3>
+          </div>
+          <div class="card-body px-4">
+            <form action="#" method="POST">
+              <div class="form-group">
+               <?= $output; ?>
+              </div>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="ime" id="name" class="form-control" placeholder="Unesite ime" required>
+              </div>
+              <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Unesite E-Mail" required>
+              </div>
+              <div class="form-group">
+                <label for="c-form-profession">
+                    <span class="label-text">Podaci o poslu</span> 
+                    <span class="contact-error"></span>
+                </label>
+                <select name="podaci1" class="c-form-profession form-control" id="c-form-profession">
+                  <option value="-1">Izaberi vrstu posla...</option>
+                  <option value="Adaptacija kuće">Adaptacija kuće</option>
+                  <option value="Adaptacija kupaonice">Adaptacija kupaonice</option>
+                  <option value="Adaptacija stana">Adaptacija stana</option>
+                  <option value="Hidroizolacija temelja, podruma">Hidroizolacija temelja, podruma</option>
+                  <option value="Uređenje potkrovlja">Uređenje potkrovlja</option>
+                  <option value="Hidroizolacija ravnog &nbsp;krova">Hidroizolacija ravnog &nbsp;krova</option>
+                  <option value="Soboslikarski radovi">Soboslikarski radovi</option>
+                </select>
+            </div>
+              <div class="form-group">
+                <label for="subject">Podaci o poslu</label>
+                <input type="text" name="podaci2" id="subject" class="form-control" placeholder="Ukratko što trebate"
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Upišite okvirnu količinu ili kvadraturu</label>
+                <input type="text" name="kvadratura" id="subject" class="form-control" placeholder="Kvadratura u m2"
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="c-form-profession">
+                    <span class="label-text">Podaci o poslu</span> 
+                    <span class="contact-error"></span>
+                </label>
+                <select name="vrijeme" class="c-form-profession form-control" id="c-form-profession">
+                  <option value="Odmah">Odmah</option>
+                    <option value="do 1 mjeseca">do 1 mjeseca</option>
+                    <option value="do 1-3 mjeseca">do 1-3 mjeseca</option>
+                    <option value="Više od 6 mjeseca">Više od 6 mjeseca</option>
+                    <option value="Zanima me samo okvirna cijena">Zanima me samo okvirna cijena</option>
+                </select>
+            </div>
+            <div class="form-group">
+              <label for="subject">Upišite lokaciju izvedbe radova</label>
+              <input type="text" name="lokacija" id="subject" class="form-control" placeholder="Poštanski broj i grad"
+                required>
+            </div>
+              <div class="form-group">
+                <input type="submit" name="submit" value="Send" class="btn btn-danger btn-block" id="sendBtn">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
