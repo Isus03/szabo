@@ -70,12 +70,12 @@ background-color: gray;
 </style>
 </head>
 
-<body class="bg-info">
-  <div class="container">
+<body>
+  <div class="container" >
     <div class="row justify-content-center">
       <div class="col-lg-6 mt-3">
-        <div class="card border-danger shadow">
-          <div class="card-header bg-danger text-light">
+        <div id="container2" >
+          <div class="card-header bg-dark text-light">
             <h3 class="card-title">Contact Us</h3>
           </div>
           <div class="card-body px-4">
@@ -84,16 +84,16 @@ background-color: gray;
                <?= $output; ?>
               </div>
               <div class="form-group">
-                <label for="name">Name</label>
+                <label for="name"><b>Name</b></label>
                 <input type="text" name="ime" id="name" class="form-control" placeholder="Unesite ime" required>
               </div>
               <div class="form-group">
-                <label for="email">E-Mail</label>
+                <label for="email"><b>E-Mail</b></label>
                 <input type="email" name="email" id="email" class="form-control" placeholder="Unesite E-Mail" required>
               </div>
               <div class="form-group">
                 <label for="c-form-profession">
-                    <span class="label-text">Podaci o poslu</span> 
+                    <span class="label-text"><b>Podaci o poslu</b></span> 
                     <span class="contact-error"></span>
                 </label>
                 <select name="podaci1" class="c-form-profession form-control" id="c-form-profession">
@@ -108,18 +108,18 @@ background-color: gray;
                 </select>
             </div>
               <div class="form-group">
-                <label for="subject">Podaci o poslu</label>
+				<label for="subject"><b>Podaci o poslu</b></label>
                 <input type="text" name="podaci2" id="subject" class="form-control" placeholder="Ukratko što trebate"
                   required>
               </div>
               <div class="form-group">
-                <label for="subject">Upišite okvirnu količinu ili kvadraturu</label>
+                <label for="subject"><b>Upišite okvirnu količinu ili kvadraturu</b></label>
                 <input type="text" name="kvadratura" id="subject" class="form-control" placeholder="Kvadratura u m2"
                   required>
               </div>
               <div class="form-group">
                 <label for="c-form-profession">
-                    <span class="label-text">Podaci o poslu</span> 
+                    <span class="label-text"><b>Podaci o poslu</b></span> 
                     <span class="contact-error"></span>
                 </label>
                 <select name="vrijeme" class="c-form-profession form-control" id="c-form-profession">
@@ -131,12 +131,12 @@ background-color: gray;
                 </select>
             </div>
             <div class="form-group">
-              <label for="subject">Upišite lokaciju izvedbe radova</label>
+              <label for="subject"><b>Upišite lokaciju izvedbe radova</b></label>
               <input type="text" name="lokacija" id="subject" class="form-control" placeholder="Poštanski broj i grad"
                 required>
             </div>
               <div class="form-group">
-                <input type="submit" name="submit" value="Send" class="btn btn-danger btn-block" id="sendBtn">
+                <input type="submit" name="submit" value="Send" class="btn btn-dark btn-block" id="sendBtn">
               </div>
             </form>
           </div>
