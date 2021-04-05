@@ -1,1 +1,2 @@
-# JEBEM VAM BOGA
+# szabo d.o.o repository
+
