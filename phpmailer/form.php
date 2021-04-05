@@ -149,7 +149,7 @@ body {
               </div>
               <div class="form-group">
                 <label for="c-form-profession">
-                    <span class="label-text"><b>Podaci o poslu</b></span> 
+                    <span class="label-text"><b>Kada želite početi sa izvedbom</b></span> 
                     <span class="contact-error"></span>
                 </label>
                 <select name="vrijeme" class="c-form-profession form-control" id="c-form-profession">
