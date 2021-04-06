@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <script data-ad-client="ca-pub-7020390269498746" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <title>Szabo d.o.o</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+  <style>
+    /*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template/scrolling-nav)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+header {
+  padding: 156px 0 100px;
+}
+
+section {
+  padding: 150px 0;
+}
+
+#text1  {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#text2 {
+  font-size: 25px;
+}
+
+
+#top {
+  background-image:url(slika123.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 20vw;
+  color: black;
+  
+}
+
+@media screen and (max-width: 800px) {
+  #top {
+    padding: 23vw;
+  }
+}
+
+
+#container123 {
+  background-color: rgba(255, 255, 255, 0.767);
+  border-radius: 30px;
+  padding: 50px, 50px;
+  font-size: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+
+@media screen and (max-width: 1300px) {
+  #container123 {
+    font-size: 30px;
+  }
+
+  #text1 {
+    font-size: 15px;
+  }
+
+  #text2 {
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+  #top {
+    background-attachment: local;
+  }
+
+  #container123 {
+    font-size: 30px;
+  }
+
+  #text1 {
+    font-size: 15px;
+  }
+
+  #text2 {
+    font-size: 15px;
+  }
+}
+
+
+
+.threadframe {
+  background-color: white;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 14px;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+}
+
+#link {
+  color: rgb(121, 60, 20);
+}
+#link:hover {
+  text-decoration: none;
+  color: rgb(168, 83, 27);
+}
+
+
+
+  </style>
+  <script>
+    "use strict";
+
+// Load plugins
+const browsersync = require("browser-sync").create();
+const del = require("del");
+const gulp = require("gulp");
+const merge = require("merge-stream");
+
+// BrowserSync
+function browserSync(done) {
+  browsersync.init({
+    server: {
+      baseDir: "./"
+    },
+    port: 3000
+  });
+  done();
+}
+
+// BrowserSync reload
+function browserSyncReload(done) {
+  browsersync.reload();
+  done();
+}
+
+// Clean vendor
+function clean() {
+  return del(["./vendor/"]);
+}
+
+// Bring third party dependencies from node_modules into vendor directory
+function modules() {
+  // Bootstrap
+  var bootstrap = gulp.src('./node_modules/bootstrap/dist/**/*')
+    .pipe(gulp.dest('./vendor/bootstrap'));
+  // jQuery
+  var jquery = gulp.src([
+      './node_modules/jquery/dist/*',
+      '!./node_modules/jquery/dist/core.js'
+    ])
+    .pipe(gulp.dest('./vendor/jquery'));
+  // jQuery Easing
+  var jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
+    .pipe(gulp.dest('./vendor/jquery-easing'));
+  return merge(bootstrap, jquery, jqueryEasing);
+}
+
+// Watch files
+function watchFiles() {
+  gulp.watch("./**/*.css", browserSyncReload);
+  gulp.watch("./**/*.html", browserSyncReload);
+}
+
+// Define complex tasks
+const vendor = gulp.series(clean, modules);
+const build = gulp.series(vendor);
+const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
+
+// Export tasks
+exports.clean = clean;
+exports.vendor = vendor;
+exports.build = build;
+exports.watch = watch;
+exports.default = build;
+
+  </script>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html">Szabo d.o.o</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
