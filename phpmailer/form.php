@@ -144,7 +144,7 @@ body {
               </div>
               <div class="form-group">
                 <label for="subject"><b>Upišite okvirnu količinu ili kvadraturu</b></label>
-                <input type="text" name="kvadratura" id="subject" class="form-control" placeholder="Kvadratura u m2"
+                <input type="text" name="kvadratura" id="subject" class="form-control" placeholder="Kvadratura u m²"
                   required>
               </div>
               <div class="form-group">
