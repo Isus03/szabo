@@ -21,6 +21,7 @@ if(isset($_POST['email']) && $_POST['email'] != '') {
     $kvadratura = $_POST['kvadratura'];
     $vrijeme = $_POST['vrijeme'];
     $lokacija = $_POST['lokacija'];
+	$telefon = $_POST ['telefon'];
 }
 
     try {
@@ -28,24 +29,24 @@ if(isset($_POST['email']) && $_POST['email'] != '') {
       $mail->Host = 'smtp.gmail.com';
       $mail->SMTPAuth = true;
       // Gmail ID which you want to use as SMTP server
-      $mail->Username = 'server.szabo1@gmail.com';
+      $mail->Username = 'tor38502003@gmail.com';
       // Gmail Password
-      $mail->Password = 'Szabo123';
+      $mail->Password = 'Luka2003.';
       $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
       $mail->Port = 587;
 
       // Email ID from which you want to send the email
-      $mail->setFrom('server.szabo1@gmail.com');
+      $mail->setFrom('tor38502003@gmail.com');
       // Recipient Email ID where you want to receive emails
       $mail->addAddress('477khii@gmail.com');
 
       $mail->isHTML(true);
       $mail->Subject = 'Zahtjev za ponudu';
-      $mail->Body = "<h3>Ime : $ime <br>Email : $email <br>Vrsta posla : $podaci1<br>Opis posla : $podaci2<br>Kvadratura : $kvadratura<br>Vrijeme : $vrijeme<br>Lokacija : $lokacija</h3>";
+      $mail->Body = "<h3>Ime : $ime <br>Email : $email <br> Broj telefona ; $telefon<br> Vrsta posla : $podaci1<br>Opis posla : $podaci2<br>Kvadratura : $kvadratura<br>Vrijeme : $vrijeme<br>Lokacija : $lokacija</h3>"; 
 
       $mail->send();
       $output = '<div class="alert alert-success">
-                  <h5>Hvala vam, javimo se u najkraćem mogućem roku!</h5>
+                  <h5>Thankyou! for contacting us, We\'ll get back to you soon!</h5>
                 </div>';
     } catch (Exception $e) {
       $output = '<div class="alert alert-danger">
@@ -55,6 +56,8 @@ if(isset($_POST['email']) && $_POST['email'] != '') {
   }
 
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -117,7 +120,11 @@ body {
                 <label for="name"><b>Ime i Prezime</b></label>
                 <input type="text" name="ime" id="name" class="form-control" placeholder="Unesite ime i prezime" required>
               </div>
-              <div class="form-group">
+                <div class="form-group">
+                <label for="name"><b>Broj telefona</b></label>
+                <input type="text" name="telefon" id="broj" class="form-control" placeholder="Unesite broj" required>
+              </div>
+		 <div class="form-group">
                 <label for="email"><b>E-Mail</b></label>
                 <input type="email" name="email" id="email" class="form-control" placeholder="Unesite E-Mail" required>
               </div>
