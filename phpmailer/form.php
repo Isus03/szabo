@@ -42,11 +42,11 @@ if(isset($_POST['email']) && $_POST['email'] != '') {
 
       $mail->isHTML(true);
       $mail->Subject = 'Zahtjev za ponudu';
-      $mail->Body = "<h3>Ime : $ime <br>Email : $email <br> Broj telefona ; $telefon<br> Vrsta posla : $podaci1<br>Opis posla : $podaci2<br>Kvadratura : $kvadratura<br>Vrijeme : $vrijeme<br>Lokacija : $lokacija</h3>"; 
+      $mail->Body = "<h3>Ime : $ime <br>Email : $email <br> Broj telefona : $telefon<br> Vrsta posla : $podaci1<br>Opis posla : $podaci2<br>Kvadratura : $kvadratura<br>Vrijeme : $vrijeme<br>Lokacija : $lokacija</h3>"; 
 
       $mail->send();
       $output = '<div class="alert alert-success">
-                  <h5>Thankyou! for contacting us, We\'ll get back to you soon!</h5>
+                  <h5>Hvala vam, javimo se uskoro!</h5>
                 </div>';
     } catch (Exception $e) {
       $output = '<div class="alert alert-danger">
