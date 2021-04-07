@@ -203,6 +203,9 @@ footer .copyright
 @media (max-width: 767px) {
     .header-text h1 {
         font-size: 45px;
+    .lead { 
+    font-size: 18px;
+    padding: 60px;
     }
 
     .header-text .vertical-line {        
