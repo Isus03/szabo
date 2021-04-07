@@ -132,11 +132,34 @@ li a {
 }
 
 
-#links1:hover {
+
+@media screen and (max-width:600px) {
+  #links1 {
+    font-size: 12px;
+  }
+
+  #links1:hover {
   transition: all 0.2s ease;
-  font-size: 18px;
+  font-size: 14px;
   color: rgb(187, 187, 187);
 }
+}
+
+@media screen and (min-width:601px) {
+  
+  #links1 {
+  font-size: 15px;
+}
+  
+  #links1:hover {
+    transition: all 0.2s ease;
+    font-size: 18px;
+    color: rgb(187, 187, 187);
+  }
+
+
+}
+
 
 
 
