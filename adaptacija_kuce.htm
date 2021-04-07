@@ -22,6 +22,11 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
+
+#mainNav {
+    background-color: gray;
+}
+
 header {
   padding: 156px 0 100px;
 }
@@ -31,7 +36,7 @@ section {
 }
 
 #text1  {
-  font-weight: bold;
+  
   font-size: 25px;
 }
 
@@ -41,7 +46,7 @@ section {
 
 
 #top {
-  background-image:url(soba3.jpg);
+  background-image:url(house1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -60,7 +65,7 @@ section {
 
 
 #container123 {
-  background-color: rgba(3, 3, 3, 0.349);
+  background-color: rgba(3, 3, 3, 0.452);
   border-radius: 30px;
   padding: 50px, 50px;
   font-size: 50px;
@@ -129,13 +134,7 @@ section {
   color: rgb(168, 83, 27);
 }
 
-#about {
-    background-image:url(soba2.jpg);
-    width:100%;
 
-
-
-}
 
 #container4 {
     background-color:rgba(255, 255, 255, 0.418);
@@ -144,7 +143,14 @@ section {
 }
 
 
-
+#border-cnt {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.404);
+    border-radius: 1px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 60px;
+}
 
   </style>
   <script>
@@ -251,7 +257,7 @@ exports.default = build;
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="index.html">Szabo d.o.o</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -280,18 +286,17 @@ exports.default = build;
     <div class="container text-center" id="container123" >
       
       ADAPTACIJA KUĆE
-      <p class="lead" id="text1">Nudimo adaptacijske radove, uređenje i renoviranje stare kuće i okućnice</p>
+      <p id="text1">Nudimo adaptacijske radove, uređenje i renoviranje stare kuće i okućnice</p>
       
       
     </div>
 
   </header>
-  <section class="bg-light" id="about">
+  <section class="bg-dark" id="about">
     <div class="container">
-      <div class="row" style="color: black;">
+      <div class="row" id="border-cnt" style="color: white; border-color: rgba(255, 255, 255, 0.404); border-radius: 1px; border-style: solid; border-width: 2px; padding: 60px;">
         <div class="col-lg-8 mx-auto">
-        <div class="row" id="container4" >
-
+        
         
           <h1>Adaptacija kuće</h1><br>
           <h5>Vjerojatno već imate neke ideje kako bi trebala izgledati Vaša adaptirana kuća, ali niste sigurni da je to baš to što vi želite. Niste sigurni da li se to što vi želite uopće može izvesti.</h5>
