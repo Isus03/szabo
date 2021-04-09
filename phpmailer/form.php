@@ -173,7 +173,7 @@ body {
                 required>
             </div>
               <div class="form-group">
-                <input type="submit" name="submit" value="Send" class="btn btn-dark btn-block" id="sendBtn">
+                <input type="submit" name="submit" value="Pošalji" class="btn btn-dark btn-block" id="sendBtn">
               </div>
             </form>
           </div>
