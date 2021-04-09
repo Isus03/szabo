@@ -11,22 +11,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-	<title>Szabo d.o.o</title>
+	<title>Rocket Internet by TEMPLATE STOCK</title>
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" type="text/css" href="rocket-internet/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
 	<!-- Goggle Font -->
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
 
 	<!-- Font Css -->
-	<link rel="stylesheet" type="text/css" href="rocket-internet/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
 	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="rocket-internet/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<!-- Animation Css -->
-	<link rel="stylesheet" href="rocket-internet/css/animate.css">
+	<link rel="stylesheet" href="css/animate.css">
 <style>
 /*
 	Rocket Internet by TEMPLATE STOCK
@@ -613,13 +613,13 @@ footer .copyright
     
 }
 
-.topnav {
+.navbar {
   overflow: hidden;
   background-color: #333;
 }
 
-.topnav a {
-  float: left;
+.navbar a {
+  float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -628,17 +628,18 @@ footer .copyright
   font-size: 17px;
 }
 
-.topnav a:hover {
+.navbar a:hover {
   background-color: #ddd;
   color: black;
 }
 
-.topnav a.active {
+.navbar a.active {
   background-color: transparent;
   color: white;
+  float: left !important; 
 }
 
-.topnav .icon {
+.navbar .icon {
   display: none;
 }
 
@@ -703,17 +704,17 @@ footer .copyright
 </script>
 </head>
 <body>
-  <div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+  <div class="navbar navbar-default navbar-fixed-top">
+    <a href="#home" class="active">Szabo d.o.o</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="#djelatnosti">Djelatnosti</a>
+    <a href="#about">O nama</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
   
-<header>
+<header  id="home">
 	<div id="homeFullScreen">
 		<div class="header-text" style="background-color: rgba(255, 255, 255, 0.356);">
 			<h1>Szabo d.o.o</h1>
@@ -741,7 +742,7 @@ footer .copyright
   </section>
 <!-- portfolio -->
 
-<section class="portfolio bg-light">
+<section class="portfolio bg-light" id="djelatnosti">
 	<!-- Carousel wrapper -->
 <div
 id="carouselMultiItemExample"
@@ -800,7 +801,7 @@ data-mdb-ride="carousel"
 
         <div class="col-lg-4 d-none d-lg-block">
           <div class="card">
-              <a href="adaptacija_stana.htm">
+              <a href="szabo-main/adaptacija_stana.htm">
             <img
               src="rocket-internet/images/slika1.jpg"
               class="card-img-top"
@@ -820,19 +821,20 @@ data-mdb-ride="carousel"
       </div>
     </div>
   </div>
-   <div class="carousel-item">
+
+  <!-- Single item -->
+  <div class="carousel-item">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-12">
           <div class="card">
-		   <a href="hidroizolacija_temelja_podruma.htm">
+            <a href="hidroizolacija_temelja_podruma.htm">
             <img
               src="rocket-internet/images/hidroizolacija12.jpg"
               class="card-img-top"
               alt="..."
             />
-              </a>
-		       </a>
+            </a>
             <div class="card-body">
                 <br>
               <p class="card-text" style="cursor: context-menu;">
@@ -846,13 +848,13 @@ data-mdb-ride="carousel"
 
         <div class="col-lg-4 d-none d-lg-block">
           <div class="card">
-			   <a href="uređenje_potkrovlja.htm">
+            <a href="uređenje_potkrovlja.htm">
             <img
-              src="rocket-internet/images/pokrovlje.jpg"
+              src="rocket-internet/images/slika1.jpg"
               class="card-img-top"
               alt="..."
             />
-		  </a>
+            </a>
             <div class="card-body">
                 <br>
               <p class="card-text" style="cursor: context-menu;">
@@ -866,13 +868,13 @@ data-mdb-ride="carousel"
 
         <div class="col-lg-4 d-none d-lg-block">
           <div class="card">
-		  <a href="soboslikarski_radovi.htm">
+            <a href="soboslikarski_radovi.htm">
             <img
-              src="rocket-internet/images/maler1.jpg"
+              src="rocket-internet/images/slika1.jpg"
               class="card-img-top"
               alt="..."
             />
-		       </a>
+            </a>
             <div class="card-body">
                 <br>
               <p class="card-text" style="cursor: context-menu;">
@@ -888,8 +890,9 @@ data-mdb-ride="carousel"
   </div>
 </div>
 <!-- Inner -->
-</div>	
-  
+</div>
+<!-- Carousel wrapper -->
+</section>
 
 <section class="bg-light" id="kontakt" style="padding: 100px;">
     <div class="container">
@@ -919,16 +922,16 @@ data-mdb-ride="carousel"
 
 
 <!-- Main JS -->
-<script type="text/javascript" src="rocket-internet/js/jquery-main.js"></script>
+<script type="text/javascript" src="js/jquery-main.js"></script>
 
 <!-- Bootstrap JS -->
-<script type="text/javascript" src="rocket-internet/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 <!-- Animation JS -->
-<script type="text/javascript" src="rocket-internet/js/wow.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
 
 <!-- Custom JS -->
-<script type="text/javascript" src="rocket-internet/js/custom.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
 
 
 </body>
