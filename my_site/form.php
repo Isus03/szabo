@@ -49,12 +49,5 @@ if(isset($_POST['email']) && $_POST['email'] != '') {
                 </div>';
     }
   }
-echo "
-</head>
-<body>
-    <div class="justify-content-center" id="thanks">
-        Thank you for contacting us!
-    </div>
-</body>
-";
+echo "<h1>Thank you!<h1>";
 ?>
