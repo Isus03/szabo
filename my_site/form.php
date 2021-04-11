@@ -37,7 +37,7 @@ if(isset($_POST['email']) && $_POST['email'] != '') {
 
       $mail->isHTML(true);
       $mail->Subject = 'Contact form';
-      $mail->Body = "<h3>Ime : $ime <br>Email : $email <br> Message : $message; </h3>";
+      $mail->Body = "<h3>Ime : $ime <br>Email : $email <br> Message : $message </h3>";
 
       $mail->send();
       $output = '<div class="alert alert-success">
