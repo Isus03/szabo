@@ -171,6 +171,7 @@
                         <p class="text-muted mb-5" style="font-weight: bold;">Ready to start your next project with us? Send us an email and we will get back to you as soon as possible!</p>
                     </div>
                 </div>
+                 <form action="form.php" method="POST">
                 <div class="form-group">
                     <label for="name"><b>Name</b></label>
                     <input type="text" name="ime" id="name" class="form-control" placeholder="Enter your name" required>
@@ -188,6 +189,7 @@
           <div class="form-group">
                 <input type="submit" name="submit" value="Send" class="btn btn-dark btn-block" id="sendBtn">
               </div>
+                </form>
         </section>
 
 
