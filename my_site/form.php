@@ -49,5 +49,30 @@ if(isset($_POST['email']) && $_POST['email'] != '') {
                 </div>';
     }
   }
-echo "<h1>Thank you!</h1>";
+echo "
+<style>
+        body {
+            background-color: #292b2c;
+        }
+
+        #thanks {
+            text-align: center;
+            font-weight: bold;
+            font-size: 45px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            margin-top: 50px;
+            border-style: solid;
+            border-radius: 1px;
+            border-color: white;
+            padding: 20vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="justify-content-center" id="thanks">
+        Thank you for contacting us!
+    </div>
+</body>
+";
 ?>
