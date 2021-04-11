@@ -49,4 +49,5 @@ if(isset($_POST['email']) && $_POST['email'] != '') {
                 </div>';
     }
   }
+echo "<h1>Thank you!</h1>";
 ?>
