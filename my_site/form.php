@@ -235,9 +235,12 @@ if(isset($_POST['email']) && $_POST['email'] != '') {
                   </div>
             <div class="form-group">
                 <label for="message"><b>Message</b></label>
-                <input type="textarea" name="massage" id="message" class="form-control" placeholder="type your massage" style="height: 100px;" required>
+                <input type="textarea" name="message" id="message" class="form-control" placeholder="type your message" style="height: 100px;" required>
             </div>
             </div>
+          <div class="form-group">
+                <input type="submit" name="submit" value="Send" class="btn btn-dark btn-block" id="sendBtn">
+              </div>
         </section>
 
 
