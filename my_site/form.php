@@ -49,5 +49,6 @@ if(isset($_POST['email']) && $_POST['email'] != '') {
                 </div>';
     }
   }
-echo "<h1>Thank you!<h1>";
+header("Location: https://szabo1.azurewebsites.net");
+exit();
 ?>
