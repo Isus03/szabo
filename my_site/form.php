@@ -49,6 +49,6 @@ if(isset($_POST['email']) && $_POST['email'] != '') {
                 </div>';
     }
   }
-header("Location: https://szabo1.azurewebsites.net");
+header("Location: https://szabo1.azurewebsites.net/my_site/final.html");
 exit();
 ?>
