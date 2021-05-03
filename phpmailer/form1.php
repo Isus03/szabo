@@ -69,7 +69,7 @@ if(isset($_POST['email']) && $_POST['email'] != '') {
 <style>
 
 body {
-	background-image:url(rocket-internet/images/baustelac.jpg);
+	background-image:url(../rocket-internet/images/baustelac.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
