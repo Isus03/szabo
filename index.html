@@ -48,17 +48,20 @@ body
 }
 
 #kontakt {
-    background-color:#292b2c ;
-    opacity: 0.9;
+    background-color:rgb(80, 80, 80) ;
+    
 }
 
 #title111 {
     text-align: center;
+    color: black; 
 }
 
 #about {
     text-align: left;
-    background-color: #292b2c;
+    background-color:rgb(80, 80, 80);
+    
+    
     
 }
 
@@ -72,7 +75,7 @@ body
 }
 
 #homeFullScreen {
-    background-image: url('rocket-internet/images/slika123.jpg');
+    background-image: url('rocket-internet/images/baustelac.jpg');
     overflow: hidden;
 }
 
@@ -248,8 +251,8 @@ footer .copyright
         font-size: 45px;
     }
     .lead { 
-    font-size: 18px;
-    padding: 60px;
+    font-size: 14px;
+   
     }
     
 
@@ -440,7 +443,7 @@ body
 }
 
 #homeFullScreen {
-    background-image: url('rocket-internet/images/slika123.jpg');
+    background-image: url('rocket-internet/images/baustelac.jpg');
     overflow: hidden;
 }
 
@@ -530,7 +533,7 @@ body
 .call-top-action
 {
     background-color: #42484c;
-    color: #fff;
+    color:#fff;
     padding: 50px 0px;
     margin-top: 50px;
 }
@@ -599,8 +602,8 @@ footer .copyright
 }
 
 .lead {
-    font-weight: bolder !important; 
-    color: white;
+    font-weight: 600; 
+    color: black;
 	
 }
 
@@ -688,7 +691,7 @@ footer .copyright
 	  
   }
 }
-
+	
 
 </style>
 <script>
@@ -742,7 +745,7 @@ footer .copyright
   
 <header  id="home">
 	<div id="homeFullScreen">
-		<div class="header-text" style="background-color: rgba(255, 255, 255, 0.356);">
+		<div class="header-text" style="background-color: rgba(255, 255, 255, 0.1);">
 			<h1>Szabo d.o.o</h1>
 			<div class="vertical-line"></div>
 			<p style="font-weight: bolder;">
@@ -760,7 +763,7 @@ footer .copyright
     <div class="container" style="padding: 40px;">
       <div class="row">
         <div class=>
-          <h2 id="title111" style="color: white; ">O NAMA</h2>
+          <h2 id="title111" style="color: black;">O NAMA</h2>
           <p class="lead">Poduzeće SZABO d.o.o. djeluje od 1992. godine u Zagrebu i okolici. Bavimo se hidroizolacijama, kao i adaptacijama objekata. <br>Radimo sa različitim vrstama hidroizolacija i uvijek koristimo najkvalitetnije materijale na tržištu. Naše poduzeće se zalaže za profesionalnost, kao i kvalitetu poslovanja, i trudimo se da uvijek možemo ispuniti sve zahtjeve potencijalnih stranaka. Zato se iz godine u godinu razvijamo i širimo ponudu naših usluga, ali ostajemo pri našoj tradiciji da je zadovoljstvo stranke najvažnije i da se kvaliteta prepoznaje. Vodeći smo u našem poslu u ovom dijelu Hrvatske, i imamo brojne reference i uspješne suradnje.</p>
         </div>
       </div>
@@ -768,7 +771,7 @@ footer .copyright
   </section>
 <!-- portfolio -->
 
-<section class="portfolio bg-light" id="djelatnosti">
+<section class="portfolio bg-light" id="djelatnosti" style="background-color:#292b2c !important;color:rgba(255, 255, 255, 0.603);">
 	<!-- Carousel wrapper -->
 <div
 id="carouselMultiItemExample"
@@ -776,7 +779,7 @@ class="carousel slide carousel-dark text-center"
 data-mdb-ride="carousel"
 >
 <!-- Controls -->
-<div class="d-flex justify-content-center mb-4" style="font-size: 35px; padding: 50px; color: black; font-weight: bolder;">
+<div class="d-flex justify-content-center mb-4" style="font-size: 35px; padding: 50px; color: rgba(255, 255, 255, 0.623); font-weight: bolder;">
     Djelatnosti
 </div>
 <!-- Inner -->
@@ -856,7 +859,7 @@ data-mdb-ride="carousel"
           <div class="card">
             <a href="hidroizolacija_temelja_podruma.htm">
             <img
-              src="rocket-internet/images/hidroizolacija12.jpg"
+              src="rocket-internet/images/h1.jpg"
               class="card-img-top"
               alt="..."
             />
@@ -919,26 +922,28 @@ data-mdb-ride="carousel"
 </div>
 <!-- Carousel wrapper -->
 </section>
-
 <section class="bg-light" id="kontakt" style="padding: 100px;">
-    <div class="container">
-      <div class="row" style="color: white;">
-        
-          <h2 style="text-align:center ;">KONTAKT</h2>
+  <div class="container">
+    <div class="row" style="color: black; font-weight: 500; font-size: 20px !important;">
+
+        <h2 style="text-align:center ;">KONTAKT</h2>
+        <br>
+        <div class="container" id="konakt">
+          <p class="lead">Radove izvodimo u regijama: Zagreb, Grad Zagreb, Koprivničko-križevačka, Krapinsko-zagorska i Zagrebačka. Kontaktirajte nas za više pojedinosti.</p>
           <br>
-          <div class="container" id="konakt">
-            Radove izvodimo u regijama: Zagreb, Grad Zagreb, Koprivničko-križevačka, Krapinsko-zagorska i Zagrebačka. Kontaktirajte nas za više pojedinosti.  
-            <br>
-            <br>
-            <center>      
-            <button type="button" class="btn btn-outline-secondary"><a href="phpmailer/form1.php" style="color: black; text-decoration: none; font-size: 16px; margin-top: 50px; font-weight:bolder;">Pošaljite ponudu</a></button>
-            </center>   
-          </div>
-          </div>
+          <br>
+          <br>
+             <center>
+              <button type="button" class="btn btn-secondary btn-lg btn-block"><a href="phpmailer/form1.php" style="color: black; text-decoration: none; font-size: 16px; margin-top: 50px; font-weight:bolder;">Pošaljite ponudu ovdje</a></button>
+             </center>
+      
+        </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer class="py-5 bg-dark" >
